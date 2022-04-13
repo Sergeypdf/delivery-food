@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Delivery Food — ruoan kotiinkuljetus</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <a class="logo">
+            <img src="img/icon/logo.svg" alt="Logo"/>
+        </a>
+        <label class="address">
+            <input type="text" class="input input-address" placeholder="Toimitusosoite"/>
+        </label>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Kirjaudu sisään</span>
+            </button>
+            <button class="button button-cart" id="cart-button">
+                <span class="button-cart-svg"></span>
+                <span class="button-text">Ostoskori</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Kirjaudu ulos</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </header>
+</div>
+<!-- /.container  -->
+
+<main class="main">
+    <div class="container">
+        <section class="container__promo">
+            <section class="container-promo swiper-container">
+                <div class="swiper-wrapper">
+                    <section class="promo pizza swiper-slide">
+                        <h2 class="promo-title">Online-palvelu <br/>ruoan kotiinkuljetus</h2>
+                        <p class="promo-text">
+                            Lempiravintolasi ruoat
+                        </p>
+                    </section>
+                    <section class="promo kebab swiper-slide">
+                        <h2 class="promo-title">Shish kebab <br> alennuksella 35%</h2>
+                        <p class="promo-text">
+                            Tilaa kebabit mistä tahansa ravintolasta ennen 20 toukokuuta ja saat alennuksen
+                            käyttämällä tarjouskoodia OMAGAD
+                        </p>
+                    </section>
+                    <section class="promo vegetables swiper-slide">
+                        <h2 class="promo-title">Alennus 20% kaikista ruoista <br> promokoodilla LOVE.JS</h2>
+                        <p class="promo-text">
+                            Tilaukseen toimitetaan kotioville kahden Front-end lahjokirjoen kanssa
+                        </p>
+                    </section>
+                    <section class="promo sushi swiper-slide">
+                        <h2 class="promo-title">Sarjat jopa 30% alennuksella <br> ravintoloissa</h2>
+                        <p class="promo-text">
+                            Alennukset sarjoista 30.5 asti tarjouskoodilla JOO JOO KYLLÄ
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="restaurants">
+                <div class="section-heading">
+                    <h2 class="section-title">Ravintolat</h2>
+                    <label class="search">
+                        <input type="text" class="input input-search" placeholder="Etsi ravintoloita"/>
+                    </label>
+                </div>
+                <div class="cards cards-restaurants"></div>
+                <!-- /.cards -->
+            </section>
+        </section>
+
+        <section class="menu hide">
+            <div class="section-heading">
+                <h2 class="section-title restaurant-title">Pizza Hawai</h2>
+                <div class="card-info">
+                    <div class="rating">
+                        4.5
+                    </div>
+                    <div class="price">Alk 7.00 €</div>
+                    <div class="category">Pizza</div>
+                </div>
+                <!-- /.card-info -->
+            </div>
+            <div class="cards cards-menu"></div>
+            <!-- /.cards -->
+        </section>
+
+    </div>
+    <!-- /.container -->
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Ravintolat</a>
+                <a href="privacy.html" class="footer-link">Tietosuojakäytäntö</a>
+                <a href="#" class="footer-link">Ruokaa kotiin lähellä</a>
+                <a href="#" class="footer-link">Yhteystiedot</a>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"/></a>
+                <a href="#" class="social-link"><img src="img/social/fb.svg" alt="facebook"/></a>
+                <a href="#" class="social-link"><img src="img/social/vk.svg" alt="vk"/></a>
+            </div>
+            <!-- /.social-links -->
+        </div>
+        <!-- /.footer-block -->
+    </div>
+</footer>
+
+<div class="modal modal-cart">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h3 class="modal-title">Ostoskori</h3>
+            <button class="close">&times;</button>
+        </div>
+        <!-- /.modal-header -->
+        <div class="modal-body"></div>
+        <!-- /.modal-body -->
+        <div class="modal-footer">
+            <span class="modal-pricetag">12.50 €</span>
+            <div class="footer-buttons">
+                <button class="button button-primary">Tilaa </button>
+                <button class="button clear-cart">Peruuta</button>
+            </div>
+        </div>
+        <!-- /.modal-footer -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal-auth">
+    <div class="modal-dialog modal-dialog-auth">
+        <button class="close-auth">&times;</button>
+        <form id="logInForm">
+            <fieldset class="modal-body">
+                <legend class="modal-title">Kirjaudu verkkokauppaan</legend>
+                <label class="label-auth">
+                    <span>Tunnus</span>
+                    <input id="login" name="login" type="text"  maxlength="30">
+                </label>
+                <label class="label-auth">
+                    <span>Salasana</span>
+                    <input id="password" name="password" type="password"  maxlength="30">
+                </label>
+            </fieldset>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <div class="footer-buttons">
+                    <button class="button button-primary button-login" type="submit">Kirjaudu</button>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal-footer -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<script src="js/index.js" type="module"></script>
+</body>
+
+</html>

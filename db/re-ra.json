@@ -1,0 +1,65 @@
+[
+  {
+    "id": "gl01",
+    "name": "Pelmeni",
+    "description": " Tarjoillaan  voisulan, sipulisilpun ja smetanan kanssa",
+    "price": 7,
+    "image": "img/re-ra/dumplings.jpg"
+  },
+  {
+    "id": "gl02",
+    "name": "Pilaf",
+    "description": "Pilaf hiilellä oikean riisin lammasta ja vihanneksia",
+    "price": 9,
+    "image": "img/re-ra/plov.jpg"
+  },
+  {
+    "id": "gl03",
+    "name": "Kana shish kebab",
+    "description": "Tarjoillaan pitaleivän päällä tuoreen tomaatin ja kurkun, marinoidun sipulin ja shish kebab-kastikkeen kanssa",
+    "price": 13,
+    "image": "img/re-ra/chick.jpg"
+  },
+  {
+    "id": "gl04",
+    "name": "Kanakeitto",
+    "description": "Kanaruho, porkkanat, pasta, vihannekset, kanamuna, suola, mausteet",
+    "price": 5,
+    "image": "img/re-ra/chicken-soup.jpg"
+  },
+  {
+    "id": "gl05",
+    "name": "Porsaan kyljys",
+    "description": "Paksu porsaanpala tomaateilla ja sienillä juustokuoren alla",
+    "price": 12,
+    "image": "img/re-ra/pig-chop.jpg"
+  },
+  {
+    "id": "gl06",
+    "name": "Vasikka kermakastikkeessa",
+    "description": "Vasikanliha herkkusienien ja sipulien kera paistetaan kermaisessa smetanakastikkeessa tarjotaan perunamuusin ja suolakurkun kanssa",
+    "price": 15,
+    "image": "img/re-ra/calf-sauce.jpg"
+  },
+  {
+    "id": "gl07",
+    "name": "Smetanakuha uunissa",
+    "description": "Perunamuusia, maustekurkkuja ja paahdettuja ruusukaaleja",
+    "price": 14,
+    "image": "img/re-ra/zander.jpg"
+  },
+  {
+    "id": "gl08",
+    "name": "Grillattuna kalmari",
+    "description": "Grillattuna kalmari valkosipulin ja persiljan kera",
+    "price": 15,
+    "image": "img/re-ra/squid.jpg"
+  },
+  {
+    "id": "gl09",
+    "name": "Kalakasari",
+    "description": "Tarjotaan kalakasari sitruunalohkon ja vaalean leivän ",
+    "price": 10,
+    "image": "img/re-ra/ear.jpg"
+  }
+]

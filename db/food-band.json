@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fb01",
+    "name": "Jauheliha",
+    "description": "Chili, tomaatti, mozzarella, kapris, sipuli, valkosipuli",
+    "price": 8.00,
+    "image": "img/food-band/meet.jpg"
+  },
+  {
+    "id": "fb02",
+    "name": "Formaggi",
+    "description": "tomaatti, fetajuusto, aurajuusto, edamjuusto",
+    "price": 9.00,
+    "image": "img/food-band/margarita.jpg"
+  },
+  {
+    "id": "fb03",
+    "name": "Superpizza",
+    "description": "Kinkku, salami, pekoni, juusto",
+    "price": 10.00,
+    "image": "img/food-band/pepperoni.jpg"
+  },
+  {
+    "id": "fb04",
+    "name": "Juustopizza",
+    "description": "Mozzarella, fetajuusto, aurajuusto, edamjuusto",
+    "price": 12.00,
+    "image": "img/food-band/seven-cheeses.jpg"
+  },
+  {
+    "id": "fb05",
+    "name": "Kummisetä",
+    "description": "Katkarapu, kinkku, herkkusieni, valkosipuli, tuplajuusto, parsa",
+    "price": 13.00,
+    "image": "img/food-band/tom-yam.jpg"
+  },
+  {
+    "id": "fb06",
+    "name": "Mestari pizza",
+    "description": "Paahdettu broileri, BBQ-kastike, kinkku, sinihomejuusto, salaatti, kastike",
+    "price": 15.00,
+    "image": "img/food-band/norwegian.jpg"
+  }
+]

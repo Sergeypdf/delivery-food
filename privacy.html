@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Delivery Food — ruoan kotiinkuljetus</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <a class="logo">
+            <img src="img/icon/logo.svg" alt="Logo"/>
+        </a>
+        <label class="address">
+            <input type="text" class="input input-address" placeholder="Toimitusosoite"/>
+        </label>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Kirjaudu sisään</span>
+            </button>
+            <button class="button button-cart" id="cart-button">
+                <span class="button-cart-svg"></span>
+                <span class="button-text">Ostoskori</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Kirjaudu ulos</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </header>
+</div>
+<!-- /.container  -->
+
+<main class="main">
+    <div class="container">
+        <section class="container__promo">
+            <section class="container-promo swiper-container">
+                <div class="swiper-wrapper">
+                    <section class="promo pizza swiper-slide">
+                        <h2 class="promo-title">Online-palvelu <br/>ruoan kotiinkuljetus</h2>
+                        <p class="promo-text">
+                            Lempiravintolasi ruoat
+                        </p>
+                    </section>
+                    <section class="promo kebab swiper-slide">
+                        <h2 class="promo-title">Shish kebab <br> alennuksella 35%</h2>
+                        <p class="promo-text">
+                            Tilaa kebabit mistä tahansa ravintolasta ennen 20 toukokuuta ja saat alennuksen
+                            käyttämällä tarjouskoodia OMAGAD
+                        </p>
+                    </section>
+                    <section class="promo vegetables swiper-slide">
+                        <h2 class="promo-title">Alennus 20% kaikista ruoista <br> promokoodilla LOVE.JS</h2>
+                        <p class="promo-text">
+                            Tilaukseen toimitetaan kotioville kahden Front-end lahjokirjoen kanssa
+                        </p>
+                    </section>
+                    <section class="promo sushi swiper-slide">
+                        <h2 class="promo-title">Sarjat jopa 30% alennuksella <br> ravintoloissa</h2>
+                        <p class="promo-text">
+                            Alennukset sarjoista 30.5 asti tarjouskoodilla JOO JOO KYLLÄ
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="privacy">            
+                <div class="section-heading">
+                    <img src="img/"
+                    <h3 class="section-title">Tietosuojakäytänteet (päivitetty 9.1.2022)</h3>
+                    <label class="search">
+                        <input type="text" class="input input-search" placeholder="Etsi ravintoloita"/>
+                    </label>
+                </div>
+                <div class="cards cards-restaurants"></div>
+                <!-- /.cards -->
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
+                    <nav class="footer-nav">
+                        <a href="#" class="footer-link">Ravintolat</a>
+                        <a href="#" class="footer-link">Tietosuojakäytäntö</a>
+                        <a href="#" class="footer-link">Ruokaa kotiin lähellä</a>
+                        <a href="#" class="footer-link">Yhteystiedot</a>
+                    </nav>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"/></a>
+                        <a href="#" class="social-link"><img src="img/social/fb.svg" alt="facebook"/></a>
+                        <a href="#" class="social-link"><img src="img/social/vk.svg" alt="vk"/></a>
+                    </div>
+                    <!-- /.social-links -->
+                </div>
+                <!-- /.footer-block -->
+            </div>
+        </footer>
+        
